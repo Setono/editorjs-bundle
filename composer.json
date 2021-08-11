@@ -26,8 +26,7 @@
         "psalm/plugin-phpunit": "^0.16.1",
         "psalm/plugin-symfony": "^2.3",
         "roave/security-advisories": "dev-latest",
-        "setono/code-quality-pack": "^2.1",
-        "symfony/translation": "^5.3"
+        "setono/code-quality-pack": "^2.1"
     },
     "config": {
         "sort-packages": true
