@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://symfony.com/schema/dic/services"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="Setono\EditorJS\Renderer\RendererInterface" alias="setono_editorjs.renderer"/>
+
+        <service id="setono_editorjs.renderer" class="Setono\EditorJS\Renderer\Renderer"/>
+
+        <!-- Block renderers -->
+        <service id="setono_editorjs.block_renderer.delimiter"
+                 class="Setono\EditorJS\Renderer\BlockRenderer\DelimiterBlockRenderer">
+            <tag name="setono_editorjs.block_renderer"/>
+        </service>
+
+        <service id="setono_editorjs.block_renderer.header"
+                 class="Setono\EditorJS\Renderer\BlockRenderer\HeaderBlockRenderer">
+            <tag name="setono_editorjs.block_renderer"/>
+        </service>
+
+        <service id="setono_editorjs.block_renderer.image"
+                 class="Setono\EditorJS\Renderer\BlockRenderer\ImageBlockRenderer">
+            <tag name="setono_editorjs.block_renderer"/>
+        </service>
+
+        <service id="setono_editorjs.block_renderer.list"
+                 class="Setono\EditorJS\Renderer\BlockRenderer\ListBlockRenderer">
+            <tag name="setono_editorjs.block_renderer"/>
+        </service>
+
+        <service id="setono_editorjs.block_renderer.paragraph"
+                 class="Setono\EditorJS\Renderer\BlockRenderer\ParagraphBlockRenderer">
+            <tag name="setono_editorjs.block_renderer"/>
+        </service>
+    </services>
+</container>
