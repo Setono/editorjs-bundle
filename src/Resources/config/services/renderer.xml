@@ -34,7 +34,7 @@
         </service>
 
         <service id="setono_editorjs.block_renderer.raw"
-                 class="Setono\EditorJS\Renderer\BlockRenderer\RawToolBlockRenderer">
+                 class="Setono\EditorJS\Renderer\BlockRenderer\RawBlockRenderer">
             <tag name="setono_editorjs.block_renderer"/>
         </service>
     </services>

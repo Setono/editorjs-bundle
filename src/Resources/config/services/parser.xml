@@ -34,7 +34,7 @@
         </service>
 
         <service id="setono_editorjs.block_parser.raw"
-                 class="Setono\EditorJS\Parser\BlockParser\RawToolParser">
+                 class="Setono\EditorJS\Parser\BlockParser\RawBlockParser">
             <tag name="setono_editorjs.block_parser"/>
         </service>
     </services>
