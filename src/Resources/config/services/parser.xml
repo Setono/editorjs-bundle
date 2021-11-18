@@ -32,5 +32,10 @@
                  class="Setono\EditorJS\Parser\BlockParser\ParagraphBlockParser">
             <tag name="setono_editorjs.block_parser"/>
         </service>
+
+        <service id="setono_editorjs.block_parser.raw"
+                 class="Setono\EditorJS\Parser\BlockParser\RawToolParser">
+            <tag name="setono_editorjs.block_parser"/>
+        </service>
     </services>
 </container>

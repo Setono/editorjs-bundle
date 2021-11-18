@@ -32,5 +32,10 @@
                  class="Setono\EditorJS\Renderer\BlockRenderer\ParagraphBlockRenderer">
             <tag name="setono_editorjs.block_renderer"/>
         </service>
+
+        <service id="setono_editorjs.block_renderer.raw"
+                 class="Setono\EditorJS\Renderer\BlockRenderer\RawToolBlockRenderer">
+            <tag name="setono_editorjs.block_renderer"/>
+        </service>
     </services>
 </container>
