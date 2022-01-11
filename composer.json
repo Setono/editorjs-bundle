@@ -19,7 +19,7 @@
         "webmozart/assert": "^1.10"
     },
     "require-dev": {
-        "infection/infection": "^0.25.3",
+        "infection/infection": "^0.25.3 || ^0.26.0",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3",
         "phpspec/prophecy-phpunit": "^2.0",
         "phpunit/phpunit": "^9.5",
