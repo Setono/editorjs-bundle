@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="4.9.2@00c062267d6e3229d91a1939992987e2d46f2393">
-  <file src="src/Entity/Job.php">
-    <TypeDoesNotContainType occurrences="1">
-      <code>!$updatedAt instanceof \DateTime &amp;&amp; !$updatedAt instanceof \DateTimeImmutable</code>
-    </TypeDoesNotContainType>
-  </file>
-</files>

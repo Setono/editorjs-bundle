@@ -1,8 +1,8 @@
 {
     "name": "setono/editorjs-bundle",
-    "type": "symfony-bundle",
     "description": "Symfony bundle that integrates the editorjs-php library",
     "license": "MIT",
+    "type": "symfony-bundle",
     "authors": [
         {
             "name": "Joachim Løvgaard",
@@ -11,15 +11,15 @@
     ],
     "require": {
         "php": ">=7.4",
-        "setono/editorjs-php": "^0.1.2",
-        "symfony/config": "^4.4 || ^5.0",
-        "symfony/dependency-injection": "^4.4 || ^5.0",
-        "symfony/http-foundation": "^4.4 || ^5.0.7",
-        "symfony/http-kernel": "^4.4 || ^5.1.5",
+        "setono/editorjs-php": "0.2.x-dev",
+        "symfony/config": "^4.4 || ^5.4 || ^6.0",
+        "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
+        "symfony/http-foundation": "^4.4 || ^5.4 || ^6.0",
+        "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0",
         "webmozart/assert": "^1.10"
     },
     "require-dev": {
-        "infection/infection": "^0.25.3",
+        "infection/infection": "^0.26",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3",
         "phpspec/prophecy-phpunit": "^2.0",
         "phpunit/phpunit": "^9.5",
@@ -28,14 +28,7 @@
         "roave/security-advisories": "dev-latest",
         "setono/code-quality-pack": "^2.1.3"
     },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
-    },
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Setono\\EditorJSBundle\\": "src/"
@@ -46,7 +39,19 @@
             "Setono\\EditorJSBundle\\Tests\\": "tests/"
         }
     },
-    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": false,
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
     "scripts": {
         "analyse": "psalm --threads=8",
         "check-style": "ecs check",

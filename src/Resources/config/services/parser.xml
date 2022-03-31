@@ -5,37 +5,8 @@
     <services>
         <service id="Setono\EditorJS\Parser\ParserInterface" alias="setono_editorjs.parser"/>
 
-        <service id="setono_editorjs.parser" class="Setono\EditorJS\Parser\Parser"/>
-
-        <!-- Block parser -->
-        <service id="setono_editorjs.block_parser.delimiter"
-                 class="Setono\EditorJS\Parser\BlockParser\DelimiterBlockParser">
-            <tag name="setono_editorjs.block_parser"/>
-        </service>
-
-        <service id="setono_editorjs.block_parser.header"
-                 class="Setono\EditorJS\Parser\BlockParser\HeaderBlockParser">
-            <tag name="setono_editorjs.block_parser"/>
-        </service>
-
-        <service id="setono_editorjs.block_parser.image"
-                 class="Setono\EditorJS\Parser\BlockParser\ImageBlockParser">
-            <tag name="setono_editorjs.block_parser"/>
-        </service>
-
-        <service id="setono_editorjs.block_parser.list"
-                 class="Setono\EditorJS\Parser\BlockParser\ListBlockParser">
-            <tag name="setono_editorjs.block_parser"/>
-        </service>
-
-        <service id="setono_editorjs.block_parser.paragraph"
-                 class="Setono\EditorJS\Parser\BlockParser\ParagraphBlockParser">
-            <tag name="setono_editorjs.block_parser"/>
-        </service>
-
-        <service id="setono_editorjs.block_parser.raw"
-                 class="Setono\EditorJS\Parser\BlockParser\RawBlockParser">
-            <tag name="setono_editorjs.block_parser"/>
+        <service id="setono_editorjs.parser" class="Setono\EditorJS\Parser\Parser">
+            <argument type="service" id="setono_editorjs.block_hydrator.composite"/>
         </service>
     </services>
 </container>
