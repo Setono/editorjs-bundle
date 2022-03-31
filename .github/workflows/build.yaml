@@ -66,6 +66,10 @@ jobs:
                     - "^4.4"
                     - "^5.4"
                     - "^6.0"
+
+                exclude:
+                    -   php-version: "7.4"
+                        symfony: "^6.0"
         
         steps:
             -   name: "Checkout"
@@ -141,10 +145,6 @@ jobs:
                 dependencies:
                     - "lowest"
                     - "highest"
-
-                exclude:
-                    -   php-version: "8.0"
-                        dependencies: "lowest"
 
         steps:
             -   name: "Checkout"
