@@ -2,7 +2,7 @@ name: "build"
 on:
     push:
         branches:
-            - "master"
+            - "1.x"
     pull_request: ~
     workflow_dispatch: ~
 
@@ -15,8 +15,6 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
-                    - "8.0"
                     - "8.1"
 
                 dependencies:
@@ -34,7 +32,7 @@ jobs:
                     coverage: "none"
 
             -   name: "Install composer dependencies"
-                uses: "ramsey/composer-install@v1"
+                uses: "ramsey/composer-install@v2"
                 with:
                     dependency-versions: "${{ matrix.dependencies }}"
 
@@ -55,21 +53,15 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
-                    - "8.0"
                     - "8.1"
+                    - "8.2"
 
                 dependencies:
                     - "highest"
 
                 symfony:
-                    - "^4.4"
                     - "^5.4"
                     - "^6.0"
-
-                exclude:
-                    -   php-version: "7.4"
-                        symfony: "^6.0"
         
         steps:
             -   name: "Checkout"
@@ -84,7 +76,7 @@ jobs:
                     tools: "composer-require-checker, composer-unused, flex"
 
             -   name: "Install composer dependencies"
-                uses: "ramsey/composer-install@v1"
+                uses: "ramsey/composer-install@v2"
                 env:
                     SYMFONY_REQUIRE: "${{ matrix.symfony }}"
                 with:
@@ -104,12 +96,15 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
-                    - "8.0"
                     - "8.1"
+                    - "8.2"
 
                 dependencies:
                     - "highest"
+
+                symfony:
+                    - "^5.4"
+                    - "^6.0"
 
         steps:
             -   name: "Checkout"
@@ -121,9 +116,12 @@ jobs:
                     php-version: "${{ matrix.php-version }}"
                     extensions: "${{ env.PHP_EXTENSIONS }}"
                     coverage: "none"
+                    tools: "flex"
 
             -   name: "Install composer dependencies"
-                uses: "ramsey/composer-install@v1"
+                uses: "ramsey/composer-install@v2"
+                env:
+                    SYMFONY_REQUIRE: "${{ matrix.symfony }}"
                 with:
                     dependency-versions: "${{ matrix.dependencies }}"
 
@@ -138,13 +136,16 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
-                    - "8.0"
                     - "8.1"
+                    - "8.2"
 
                 dependencies:
                     - "lowest"
                     - "highest"
+
+                symfony:
+                    - "^5.4"
+                    - "^6.0"
 
         steps:
             -   name: "Checkout"
@@ -156,9 +157,12 @@ jobs:
                     php-version: "${{ matrix.php-version }}"
                     extensions: "${{ env.PHP_EXTENSIONS }}"
                     coverage: "none"
+                    tools: "flex"
 
             -   name: "Install composer dependencies"
-                uses: "ramsey/composer-install@v1"
+                uses: "ramsey/composer-install@v2"
+                env:
+                    SYMFONY_REQUIRE: "${{ matrix.symfony }}"
                 with:
                     dependency-versions: "${{ matrix.dependencies }}"
 
@@ -173,7 +177,7 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "8.1"
+                    - "8.2"
 
                 dependencies:
                     - "highest"
@@ -193,7 +197,7 @@ jobs:
                 run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
 
             -   name: "Install composer dependencies"
-                uses: "ramsey/composer-install@v1"
+                uses: "ramsey/composer-install@v2"
                 with:
                     dependency-versions: "${{ matrix.dependencies }}"
 
@@ -213,7 +217,7 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "8.1"
+                    - "8.2"
 
                 dependencies:
                     - "highest"
@@ -230,7 +234,7 @@ jobs:
                     php-version: "${{ matrix.php-version }}"
 
             -   name: "Install composer dependencies"
-                uses: "ramsey/composer-install@v1"
+                uses: "ramsey/composer-install@v2"
                 with:
                     dependency-versions: "${{ matrix.dependencies }}"
 

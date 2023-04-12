@@ -13,10 +13,10 @@ This bundle integrates the [editorjs-php](https://github.com/Setono/editorjs-php
 [ico-unstable-version]: https://poser.pugx.org/setono/editorjs-bundle/v/unstable
 [ico-license]: https://poser.pugx.org/setono/editorjs-bundle/license
 [ico-github-actions]: https://github.com/Setono/EditorJSBundle/workflows/build/badge.svg
-[ico-code-coverage]: https://codecov.io/gh/Setono/EditorJSBundle/branch/master/graph/badge.svg
-[ico-infection]: https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FSetono%2FEditorJSBundle%2Fmaster
+[ico-code-coverage]: https://codecov.io/gh/Setono/EditorJSBundle/branch/1.x/graph/badge.svg
+[ico-infection]: https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FSetono%2FEditorJSBundle%2F1.x
 
 [link-packagist]: https://packagist.org/packages/setono/editorjs-bundle
 [link-github-actions]: https://github.com/Setono/EditorJSBundle/actions
 [link-code-coverage]: https://codecov.io/gh/Setono/EditorJSBundle
-[link-infection]: https://dashboard.stryker-mutator.io/reports/github.com/Setono/EditorJSBundle/master
+[link-infection]: https://dashboard.stryker-mutator.io/reports/github.com/Setono/EditorJSBundle/1.x

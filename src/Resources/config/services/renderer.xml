@@ -5,8 +5,6 @@
     <services>
         <service id="Setono\EditorJS\Renderer\RendererInterface" alias="setono_editorjs.renderer"/>
 
-        <service id="setono_editorjs.renderer" class="Setono\EditorJS\Renderer\Renderer">
-            <argument type="service" id="setono_editorjs.block_renderer.composite"/>
-        </service>
+        <service id="setono_editorjs.renderer" class="Setono\EditorJS\Renderer\Renderer"/>
     </services>
 </container>

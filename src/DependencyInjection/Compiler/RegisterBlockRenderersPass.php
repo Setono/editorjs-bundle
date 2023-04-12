@@ -14,11 +14,11 @@ final class RegisterBlockRenderersPass implements CompilerPassInterface
 
     public function process(ContainerBuilder $container): void
     {
-        if (!$container->hasDefinition('setono_editorjs.block_renderer.composite')) {
+        if (!$container->hasDefinition('setono_editorjs.renderer')) {
             return;
         }
 
-        $renderer = $container->getDefinition('setono_editorjs.block_renderer.composite');
+        $renderer = $container->getDefinition('setono_editorjs.renderer');
 
         foreach ($this->findAndSortTaggedServices('setono_editorjs.block_renderer', $container) as $service) {
             $renderer->addMethodCall('add', [$service]);

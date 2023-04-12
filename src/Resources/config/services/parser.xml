@@ -5,8 +5,6 @@
     <services>
         <service id="Setono\EditorJS\Parser\ParserInterface" alias="setono_editorjs.parser"/>
 
-        <service id="setono_editorjs.parser" class="Setono\EditorJS\Parser\Parser">
-            <argument type="service" id="setono_editorjs.block_hydrator.composite"/>
-        </service>
+        <service id="setono_editorjs.parser" class="Setono\EditorJS\Parser\Parser"/>
     </services>
 </container>
