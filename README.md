@@ -9,6 +9,9 @@
 
 This bundle integrates the [editorjs-php](https://github.com/Setono/editorjs-php) library into Symfony.
 
+Instead of using the default block renderers in the library, this bundle creates a [TwigBlockRenderer](src/BlockRenderer/TwigBlockRenderer.php)
+which renders all blocks as twig templates. This makes it very easy for you to override the rendered HTML for each block.
+
 ## Install
 
 ```shell
