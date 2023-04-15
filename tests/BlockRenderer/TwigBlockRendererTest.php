@@ -34,6 +34,15 @@ final class TwigBlockRendererTest extends TestCase
     /**
      * @test
      */
+    public function it_supports_all_blocks(): void
+    {
+        $renderer = new TwigBlockRenderer($this->prophesize(Environment::class)->reveal());
+        self::assertTrue($renderer->supports(new SimpleImageBlock('id')));
+    }
+
+    /**
+     * @test
+     */
     public function it_throws_twig_render_exception_if_the_template_cannot_be_rendered(): void
     {
         $this->expectException(TwigRenderException::class);

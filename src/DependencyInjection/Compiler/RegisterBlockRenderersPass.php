@@ -12,13 +12,15 @@ final class RegisterBlockRenderersPass implements CompilerPassInterface
 {
     use PriorityTaggedServiceTrait;
 
+    private const RENDERER_SERVICE_ID = 'setono_editorjs.renderer';
+
     public function process(ContainerBuilder $container): void
     {
-        if (!$container->hasDefinition('setono_editorjs.renderer')) {
+        if (!$container->hasDefinition(self::RENDERER_SERVICE_ID)) {
             return;
         }
 
-        $renderer = $container->getDefinition('setono_editorjs.renderer');
+        $renderer = $container->getDefinition(self::RENDERER_SERVICE_ID);
 
         foreach ($this->findAndSortTaggedServices('setono_editorjs.block_renderer', $container) as $service) {
             $renderer->addMethodCall('add', [$service]);

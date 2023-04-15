@@ -42,4 +42,18 @@ final class RegisterBlockRenderersPassTest extends AbstractCompilerPassTestCase
             ],
         );
     }
+
+    /**
+     * @test
+     */
+    public function it_does_not_do_anything_if_renderer_is_not_present(): void
+    {
+        $blockRendererDefinition = new Definition();
+        $blockRendererDefinition->addTag('setono_editorjs.block_renderer');
+        $this->setDefinition('block_renderer', $blockRendererDefinition);
+
+        $this->compile();
+
+        $this->assertContainerBuilderNotHasService('setono_editorjs.renderer');
+    }
 }
