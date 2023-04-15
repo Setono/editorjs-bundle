@@ -3,38 +3,10 @@
 <container xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://symfony.com/schema/dic/services"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="setono_editorjs.block_renderer.delimiter"
-                 class="Setono\EditorJS\BlockRenderer\DelimiterBlockRenderer">
-            <tag name="setono_editorjs.block_renderer" priority="-100"/>
-        </service>
+        <service id="setono_editorjs.block_renderer.twig"
+                 class="Setono\EditorJSBundle\BlockRenderer\TwigBlockRenderer">
+            <argument type="service" id="twig"/>
 
-        <service id="setono_editorjs.block_renderer.embed"
-                 class="Setono\EditorJS\BlockRenderer\EmbedBlockRenderer">
-            <tag name="setono_editorjs.block_renderer" priority="-100"/>
-        </service>
-
-        <service id="setono_editorjs.block_renderer.header"
-                 class="Setono\EditorJS\BlockRenderer\HeaderBlockRenderer">
-            <tag name="setono_editorjs.block_renderer" priority="-100"/>
-        </service>
-
-        <service id="setono_editorjs.block_renderer.image"
-                 class="Setono\EditorJS\BlockRenderer\ImageBlockRenderer">
-            <tag name="setono_editorjs.block_renderer" priority="-100"/>
-        </service>
-
-        <service id="setono_editorjs.block_renderer.list"
-                 class="Setono\EditorJS\BlockRenderer\ListBlockRenderer">
-            <tag name="setono_editorjs.block_renderer" priority="-100"/>
-        </service>
-
-        <service id="setono_editorjs.block_renderer.paragraph"
-                 class="Setono\EditorJS\BlockRenderer\ParagraphBlockRenderer">
-            <tag name="setono_editorjs.block_renderer" priority="-100"/>
-        </service>
-
-        <service id="setono_editorjs.block_renderer.raw"
-                 class="Setono\EditorJS\BlockRenderer\RawBlockRenderer">
             <tag name="setono_editorjs.block_renderer" priority="-100"/>
         </service>
     </services>

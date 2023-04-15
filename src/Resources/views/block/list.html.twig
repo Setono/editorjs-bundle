@@ -1,0 +1,6 @@
+{# @var block \Setono\EditorJS\Block\ListBlock #}
+<{{ block.tag }}>
+{% for item in block.items %}
+    <li>{{ item|raw }}</li>
+{% endfor %}
+</{{ block.tag }}>
