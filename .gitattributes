@@ -7,3 +7,5 @@
 /phpunit.xml.dist           export-ignore
 /psalm.xml                  export-ignore
 /README.md                  export-ignore
+/.github                    export-ignore
+/composer-unused.php        export-ignore
