@@ -9,6 +9,51 @@
 
 This bundle integrates the [editorjs-php](https://github.com/Setono/editorjs-php) library into Symfony.
 
+## Install
+
+```shell
+composer require setono/editorjs-bundle
+```
+
+## Usage
+
+```php
+<?php
+
+use Setono\EditorJS\Parser\ParserInterface;
+use Setono\EditorJS\Renderer\RendererInterface;
+
+final class YourService
+{
+    public function __construct(
+        private readonly ParserInterface $parser,
+        private readonly RendererInterface $renderer
+    ) {
+    }
+
+    public function __invoke(string $json): string
+    {
+        return $this->renderer->render($this->parser->parse($json));
+    }
+}
+```
+
+## Override rendered HTML
+
+Each block has a corresponding Twig template inside the [block](src/Resources/views/block) directory.
+The template for the `ListBlock` looks like this for example:
+
+```twig
+{# @var block \Setono\EditorJS\Block\ListBlock #}
+<{{ block.tag }}>
+{% for item in block.items %}
+    <li>{{ item|raw }}</li>
+{% endfor %}
+</{{ block.tag }}>
+```
+
+Just as other Twig templates you can easily [override](https://symfony.com/doc/6.3/bundles/override.html#templates) these templates.
+
 [ico-version]: https://poser.pugx.org/setono/editorjs-bundle/v/stable
 [ico-unstable-version]: https://poser.pugx.org/setono/editorjs-bundle/v/unstable
 [ico-license]: https://poser.pugx.org/setono/editorjs-bundle/license
