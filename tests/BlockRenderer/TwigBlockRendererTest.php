@@ -24,11 +24,15 @@ final class TwigBlockRendererTest extends TestCase
      */
     public function it_renders(): void
     {
+        $block = new SimpleImageBlock('id');
+
         $twig = $this->prophesize(Environment::class);
-        $twig->render('@SetonoEditorJS/block/simple_image.html.twig')->shouldBeCalledOnce()->willReturn('');
+        $twig->render('@SetonoEditorJS/block/simple_image.html.twig', [
+            'block' => $block,
+        ])->shouldBeCalledOnce()->willReturn('');
 
         $renderer = new TwigBlockRenderer($twig->reveal());
-        $renderer->render(new SimpleImageBlock('id'));
+        $renderer->render($block);
     }
 
     /**
@@ -47,11 +51,15 @@ final class TwigBlockRendererTest extends TestCase
     {
         $this->expectException(TwigRenderException::class);
 
+        $block = new SimpleImageBlock('id');
+
         $twig = $this->prophesize(Environment::class);
-        $twig->render('@SetonoEditorJS/block/simple_image.html.twig')->willThrow(new LoaderError('The template does not exist'));
+        $twig->render('@SetonoEditorJS/block/simple_image.html.twig', [
+            'block' => $block,
+        ])->willThrow(new LoaderError('The template does not exist'));
 
         $renderer = new TwigBlockRenderer($twig->reveal());
-        $renderer->render(new SimpleImageBlock('id'));
+        $renderer->render($block);
     }
 }
 

@@ -29,7 +29,9 @@ final class TwigBlockRenderer implements BlockRendererInterface
         $template = sprintf('@SetonoEditorJS/block/%s.html.twig', $blockName);
 
         try {
-            return $this->twig->render($template);
+            return $this->twig->render($template, [
+                'block' => $block,
+            ]);
         } catch (\Throwable $e) {
             throw TwigRenderException::fromThrowable($template, $e);
         }
