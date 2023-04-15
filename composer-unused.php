@@ -7,6 +7,7 @@ use ComposerUnused\ComposerUnused\Configuration\NamedFilter;
 
 return static function (Configuration $config): Configuration {
     return $config
+        ->addNamedFilter(NamedFilter::fromString('symfony/monolog-bundle')) // This bundle defines the 'logger' service
         ->addNamedFilter(NamedFilter::fromString('symfony/twig-bundle')) // This bundle defines the 'twig' service
-        ;
+    ;
 };
