@@ -22,7 +22,7 @@
         "twig/twig": "^2.15 || ^3.5"
     },
     "require-dev": {
-        "infection/infection": "^0.26",
+        "infection/infection": "^0.26 || ^0.27",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3",
         "phpspec/prophecy-phpunit": "^2.0",
         "phpunit/phpunit": "^9.5",
