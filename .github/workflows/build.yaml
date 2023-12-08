@@ -2,7 +2,7 @@ name: "build"
 on:
     push:
         branches:
-            - "1.x"
+            - "*.x"
     pull_request: ~
     workflow_dispatch: ~
 
@@ -57,11 +57,20 @@ jobs:
                     - "8.2"
 
                 dependencies:
+                    - "lowest"
                     - "highest"
 
                 symfony:
-                    - "^5.4"
-                    - "^6.0"
+                    - "~6.0.0"
+                    - "~6.1.0"
+                    - "~6.2.0"
+                    - "~6.3.0"
+                    - "~6.4.0"
+                    - "~7.0.0"
+                
+                exclude:
+                    -   php-version: "8.1"
+                        symfony: "~7.0.0"
         
         steps:
             -   name: "Checkout"
@@ -100,11 +109,20 @@ jobs:
                     - "8.2"
 
                 dependencies:
+                    - "lowest"
                     - "highest"
 
                 symfony:
-                    - "^5.4"
-                    - "^6.0"
+                    - "~6.0.0"
+                    - "~6.1.0"
+                    - "~6.2.0"
+                    - "~6.3.0"
+                    - "~6.4.0"
+                    - "~7.0.0"
+                
+                exclude:
+                    -   php-version: "8.1"
+                        symfony: "~7.0.0"
 
         steps:
             -   name: "Checkout"
@@ -144,8 +162,16 @@ jobs:
                     - "highest"
 
                 symfony:
-                    - "^5.4"
-                    - "^6.0"
+                    - "~6.0.0"
+                    - "~6.1.0"
+                    - "~6.2.0"
+                    - "~6.3.0"
+                    - "~6.4.0"
+                    - "~7.0.0"
+                
+                exclude:
+                    -   php-version: "8.1"
+                        symfony: "~7.0.0"
 
         steps:
             -   name: "Checkout"
