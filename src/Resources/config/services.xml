@@ -6,5 +6,6 @@
         <import resource="services/block_renderer.xml"/>
         <import resource="services/parser.xml"/>
         <import resource="services/renderer.xml"/>
+        <import resource="services/twig.xml"/>
     </imports>
 </container>

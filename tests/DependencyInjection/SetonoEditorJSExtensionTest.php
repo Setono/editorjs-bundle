@@ -11,6 +11,8 @@ use Setono\EditorJS\Renderer\Renderer;
 use Setono\EditorJS\Renderer\RendererInterface;
 use Setono\EditorJSBundle\BlockRenderer\TwigBlockRenderer;
 use Setono\EditorJSBundle\DependencyInjection\SetonoEditorJSExtension;
+use Setono\EditorJSBundle\Twig\Extension;
+use Setono\EditorJSBundle\Twig\Runtime;
 
 /**
  * @covers \Setono\EditorJSBundle\DependencyInjection\SetonoEditorJSExtension
@@ -37,6 +39,8 @@ final class SetonoEditorJSExtensionTest extends AbstractExtensionTestCase
             ['id' => 'setono_editorjs.parser', 'class' => Parser::class],
             ['id' => RendererInterface::class, 'class' => Renderer::class],
             ['id' => 'setono_editorjs.renderer', 'class' => Renderer::class],
+            ['id' => 'setono_editorjs.twig.extension', 'class' => Extension::class, 'tag' => 'twig.extension'],
+            ['id' => 'setono_editorjs.twig.runtime', 'class' => Runtime::class, 'tag' => 'twig.runtime'],
         ];
 
         foreach ($services as $service) {
