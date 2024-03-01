@@ -1,7 +1,6 @@
 # Symfony EditorJS Bundle
 
 [![Latest Version][ico-version]][link-packagist]
-[![Latest Unstable Version][ico-unstable-version]][link-packagist]
 [![Software License][ico-license]](LICENSE)
 [![Build Status][ico-github-actions]][link-github-actions]
 [![Code Coverage][ico-code-coverage]][link-code-coverage]
@@ -58,13 +57,12 @@ The template for the `ListBlock` looks like this for example:
 Just as other Twig templates you can easily [override](https://symfony.com/doc/6.3/bundles/override.html#templates) these templates.
 
 [ico-version]: https://poser.pugx.org/setono/editorjs-bundle/v/stable
-[ico-unstable-version]: https://poser.pugx.org/setono/editorjs-bundle/v/unstable
 [ico-license]: https://poser.pugx.org/setono/editorjs-bundle/license
-[ico-github-actions]: https://github.com/Setono/EditorJSBundle/workflows/build/badge.svg
-[ico-code-coverage]: https://codecov.io/gh/Setono/EditorJSBundle/branch/1.x/graph/badge.svg
-[ico-infection]: https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FSetono%2FEditorJSBundle%2F1.x
+[ico-github-actions]: https://github.com/Setono/editorjs-bundle/workflows/build/badge.svg
+[ico-code-coverage]: https://codecov.io/gh/Setono/editorjs-bundle/graph/badge.svg
+[ico-infection]: https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FSetono%2Feditorjs-bundle%2F1.x
 
 [link-packagist]: https://packagist.org/packages/setono/editorjs-bundle
-[link-github-actions]: https://github.com/Setono/EditorJSBundle/actions
-[link-code-coverage]: https://codecov.io/gh/Setono/EditorJSBundle
-[link-infection]: https://dashboard.stryker-mutator.io/reports/github.com/Setono/EditorJSBundle/1.x
+[link-github-actions]: https://github.com/Setono/editorjs-bundle/actions
+[link-code-coverage]: https://codecov.io/gh/Setono/editorjs-bundle
+[link-infection]: https://dashboard.stryker-mutator.io/reports/github.com/Setono/editorjs-bundle/1.x
