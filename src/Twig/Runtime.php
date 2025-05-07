@@ -22,8 +22,12 @@ final class Runtime implements RuntimeExtensionInterface, LoggerAwareInterface
         $this->logger = new NullLogger();
     }
 
-    public function render(string $json): string
+    public function render(?string $json): string
     {
+        if (null === $json) {
+            return '';
+        }
+
         try {
             return $this->renderer->render($this->parser->parse($json));
         } catch (\Throwable $e) {
