@@ -12,7 +12,7 @@
     "require": {
         "php": ">=8.1",
         "psr/log": "^1.1 || ^2.0 || ^3.0",
-        "setono/editorjs-php": "^1.0",
+        "setono/editorjs-php": "^1.2",
         "symfony/config": "^5.4 || ^6.0 || ^7.0",
         "symfony/dependency-injection": "^5.4 || ^6.0 || ^7.0",
         "symfony/http-foundation": "^5.4 || ^6.0 || ^7.0",
@@ -32,7 +32,6 @@
         "setono/code-quality-pack": "^2.9",
         "shipmonk/composer-dependency-analyser": "^1.8.2"
     },
-    "minimum-stability": "alpha",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
