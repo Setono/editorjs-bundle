@@ -7,7 +7,7 @@
 
         <service id="setono_editorjs.renderer" class="Setono\EditorJS\Renderer\Renderer">
             <call method="setLogger">
-                <argument type="service" id="logger"/>
+                <argument type="service" id="logger" on-invalid="ignore"/>
             </call>
             <call method="throwOnUnsupported">
                 <argument>%kernel.debug%</argument>
