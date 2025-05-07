@@ -15,7 +15,6 @@
         "setono/editorjs-php": "^1.2",
         "symfony/config": "^5.4 || ^6.4 || ^7.0",
         "symfony/dependency-injection": "^5.4 || ^6.4 || ^7.0",
-        "symfony/http-foundation": "^5.4 || ^6.4 || ^7.0",
         "symfony/http-kernel": "^5.4 || ^6.4 || ^7.0",
         "symfony/string": "^5.4 || ^6.4 || ^7.0",
         "symfony/twig-bundle": "^5.4 || ^6.4 || ^7.0",
