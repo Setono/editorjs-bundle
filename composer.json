@@ -23,13 +23,14 @@
         "twig/twig": "^2.15 || ^3.5"
     },
     "require-dev": {
-        "infection/infection": "^0.27",
-        "matthiasnoback/symfony-dependency-injection-test": "^4.3 || ^5.0",
-        "phpspec/prophecy-phpunit": "^2.0",
-        "phpunit/phpunit": "^9.5",
+        "infection/infection": "^0.27.11",
+        "matthiasnoback/symfony-dependency-injection-test": "^4.3 || ^5.1",
+        "phpspec/prophecy-phpunit": "^2.3",
+        "phpunit/phpunit": "^9.6",
         "psalm/plugin-phpunit": "^0.18",
-        "psalm/plugin-symfony": "^5.0",
-        "setono/code-quality-pack": "^2.6"
+        "psalm/plugin-symfony": "^5.2",
+        "setono/code-quality-pack": "^2.9",
+        "shipmonk/composer-dependency-analyser": "^1.8.2"
     },
     "minimum-stability": "alpha",
     "prefer-stable": true,
