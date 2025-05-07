@@ -55,16 +55,13 @@ jobs:
                 php-version:
                     - "8.1"
                     - "8.2"
+                    - "8.3"
 
                 dependencies:
                     - "lowest"
                     - "highest"
 
                 symfony:
-                    - "~6.0.0"
-                    - "~6.1.0"
-                    - "~6.2.0"
-                    - "~6.3.0"
                     - "~6.4.0"
                     - "~7.0.0"
                 
@@ -104,16 +101,13 @@ jobs:
                 php-version:
                     - "8.1"
                     - "8.2"
+                    - "8.3"
 
                 dependencies:
                     - "lowest"
                     - "highest"
 
                 symfony:
-                    - "~6.0.0"
-                    - "~6.1.0"
-                    - "~6.2.0"
-                    - "~6.3.0"
                     - "~6.4.0"
                     - "~7.0.0"
                 
@@ -153,16 +147,13 @@ jobs:
                 php-version:
                     - "8.1"
                     - "8.2"
+                    - "8.3"
 
                 dependencies:
                     - "lowest"
                     - "highest"
 
                 symfony:
-                    - "~6.0.0"
-                    - "~6.1.0"
-                    - "~6.2.0"
-                    - "~6.3.0"
                     - "~6.4.0"
                     - "~7.0.0"
                 
@@ -215,9 +206,6 @@ jobs:
                     coverage: "pcov"
                     extensions: "${{ env.PHP_EXTENSIONS }}"
                     php-version: "${{ matrix.php-version }}"
-
-            -   name: "Set up problem matchers for phpunit/phpunit"
-                run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
 
             -   name: "Install composer dependencies"
                 uses: "ramsey/composer-install@v3"
