@@ -58,11 +58,11 @@ Just as other Twig templates you can easily [override](https://symfony.com/doc/6
 
 [ico-version]: https://poser.pugx.org/setono/editorjs-bundle/v/stable
 [ico-license]: https://poser.pugx.org/setono/editorjs-bundle/license
-[ico-github-actions]: https://github.com/Setono/editorjs-bundle/workflows/build/badge.svg
+[ico-github-actions]: https://github.com/Setono/editorjs-bundle/actions/workflows/build.yaml/badge.svg
 [ico-code-coverage]: https://codecov.io/gh/Setono/editorjs-bundle/graph/badge.svg
 [ico-infection]: https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FSetono%2Feditorjs-bundle%2F1.x
 
 [link-packagist]: https://packagist.org/packages/setono/editorjs-bundle
-[link-github-actions]: https://github.com/Setono/editorjs-bundle/actions
+[link-github-actions]: https://github.com/Setono/editorjs-bundle/actions/workflows/build.yaml
 [link-code-coverage]: https://codecov.io/gh/Setono/editorjs-bundle
 [link-infection]: https://dashboard.stryker-mutator.io/reports/github.com/Setono/editorjs-bundle/1.x
