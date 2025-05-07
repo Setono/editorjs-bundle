@@ -1,0 +1,7 @@
+--TEST--
+"editorjs_render" should return empty string
+--TEMPLATE--
+{{ null|editorjs_render }}
+--DATA--
+return []
+--EXPECT--
