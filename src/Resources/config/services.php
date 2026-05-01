@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
-return static function (ContainerConfigurator $containerConfigurator): void {
-    $containerConfigurator->import('services/block_renderer.php');
-    $containerConfigurator->import('services/parser.php');
-    $containerConfigurator->import('services/renderer.php');
-    $containerConfigurator->import('services/twig.php');
+return static function (ContainerConfigurator $container): void {
+    $container->import('services/block_renderer.php');
+    $container->import('services/parser.php');
+    $container->import('services/renderer.php');
+    $container->import('services/twig.php');
 };

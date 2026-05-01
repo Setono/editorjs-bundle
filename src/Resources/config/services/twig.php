@@ -7,8 +7,8 @@ use Setono\EditorJSBundle\Twig\Runtime;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 
-return static function (ContainerConfigurator $containerConfigurator): void {
-    $services = $containerConfigurator->services();
+return static function (ContainerConfigurator $container): void {
+    $services = $container->services();
 
     $services->set('setono_editorjs.twig.extension', Extension::class)
         ->tag('twig.extension')
