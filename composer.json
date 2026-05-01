@@ -10,25 +10,19 @@
         }
     ],
     "require": {
-        "php": ">=8.1",
+        "php": ">=8.2",
         "psr/log": "^1.1 || ^2.0 || ^3.0",
         "setono/editorjs-php": "^1.2",
-        "symfony/config": "^5.4 || ^6.4 || ^7.0 || ^8.0",
-        "symfony/dependency-injection": "^5.4 || ^6.4 || ^7.0 || ^8.0",
-        "symfony/http-kernel": "^5.4 || ^6.4 || ^7.0 || ^8.0",
-        "symfony/string": "^5.4 || ^6.4 || ^7.0 || ^8.0",
-        "symfony/twig-bundle": "^5.4 || ^6.4 || ^7.0 || ^8.0",
-        "twig/twig": "^2.15 || ^3.5"
+        "symfony/config": "^6.4 || ^7.4 || ^8.0",
+        "symfony/dependency-injection": "^6.4 || ^7.4 || ^8.0",
+        "symfony/http-kernel": "^6.4 || ^7.4 || ^8.0",
+        "symfony/string": "^6.4 || ^7.4 || ^8.0",
+        "symfony/twig-bundle": "^6.4 || ^7.4 || ^8.0",
+        "twig/twig": "^3.5"
     },
     "require-dev": {
-        "infection/infection": "^0.27.11",
-        "matthiasnoback/symfony-dependency-injection-test": "^4.3 || ^5.1",
-        "phpspec/prophecy-phpunit": "^2.3",
-        "phpunit/phpunit": "^9.6",
-        "psalm/plugin-phpunit": "^0.18",
-        "psalm/plugin-symfony": "^5.2",
-        "setono/code-quality-pack": "^2.9",
-        "shipmonk/composer-dependency-analyser": "^1.8.2"
+        "matthiasnoback/symfony-dependency-injection-test": "^4.3 || ^5.1 || ^6.3",
+        "setono/code-quality-pack": "^3.3"
     },
     "prefer-stable": true,
     "autoload": {
