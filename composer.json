@@ -22,7 +22,7 @@
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.50",
-        "infection/infection": "^0.32.7",
+        "infection/infection": "^0.29.14 || ^0.30.3 || ^0.31.9 || ^0.32.7",
         "jangregor/phpstan-prophecy": "^2.3",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3 || ^5.1",
         "phpspec/prophecy-phpunit": "^2.5",
