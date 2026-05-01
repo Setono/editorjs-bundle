@@ -21,8 +21,20 @@
         "twig/twig": "^3.5"
     },
     "require-dev": {
-        "matthiasnoback/symfony-dependency-injection-test": "^4.3 || ^5.1 || ^6.3",
-        "setono/code-quality-pack": "^3.4"
+        "ergebnis/composer-normalize": "^2.50",
+        "infection/infection": "^0.29.14",
+        "jangregor/phpstan-prophecy": "^2.3",
+        "matthiasnoback/symfony-dependency-injection-test": "^4.3 || ^5.1",
+        "phpspec/prophecy-phpunit": "^2.5",
+        "phpstan/extension-installer": "^1.4.3",
+        "phpstan/phpstan": "^2.1.46",
+        "phpstan/phpstan-phpunit": "^2.0.16",
+        "phpstan/phpstan-strict-rules": "^2.0.10",
+        "phpstan/phpstan-webmozart-assert": "^2.0",
+        "phpunit/phpunit": "^10.5",
+        "rector/rector": "^2.4.1",
+        "shipmonk/composer-dependency-analyser": "^1.8.4",
+        "sylius-labs/coding-standard": "^4.5"
     },
     "prefer-stable": true,
     "autoload": {
