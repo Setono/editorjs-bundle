@@ -21,18 +21,18 @@
         "twig/twig": "^3.5"
     },
     "require-dev": {
-        "ergebnis/composer-normalize": "^2.50",
+        "ergebnis/composer-normalize": "^2.51",
         "infection/infection": "^0.29.14 || ^0.30.3 || ^0.31.9 || ^0.32.7",
         "jangregor/phpstan-prophecy": "^2.3",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3 || ^5.1 || ^6.3",
         "phpspec/prophecy-phpunit": "^2.5",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan": "^2.1.46",
+        "phpstan/phpstan": "^2.1.54",
         "phpstan/phpstan-phpunit": "^2.0.16",
         "phpstan/phpstan-strict-rules": "^2.0.10",
         "phpstan/phpstan-webmozart-assert": "^2.0",
-        "phpunit/phpunit": "^10.5",
-        "rector/rector": "^2.4.1",
+        "phpunit/phpunit": "^10.5.63",
+        "rector/rector": "^2.4.2",
         "shipmonk/composer-dependency-analyser": "^1.8.4",
         "sylius-labs/coding-standard": "^4.5"
     },
